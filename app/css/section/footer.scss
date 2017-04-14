@@ -1,0 +1,45 @@
+.footer {
+	height: 65px;
+	background: #171e24;
+	margin-top: -65px;
+}
+
+.container-footer {
+	height: 100%;
+	margin: 0 auto;
+	width: 980px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.copyright {
+	color: $white;
+	opacity: .5;
+}
+
+.social__list {
+	display: flex;
+}
+
+.social__item {
+	margin-right: 8px;
+}
+
+.social__link {
+	font-size: 24px;
+	color: $white;
+	transition: .3s;
+		&:hover {
+			color: #9bd74a;
+		}
+}
+
+.email__link {
+	color: $white;
+	font-size: 22px;
+	transition: .3s;
+	 &:hover {
+	 	color: #9bd74a;
+	 }
+}

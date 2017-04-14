@@ -1,0 +1,83 @@
+.header {
+	background: #171e24;
+}
+
+.header__left {
+	display: flex;
+	flex-direction: column;
+	width: 50%;
+	margin-top: 20px;
+}
+
+
+.logo {
+	position: relative;
+}
+
+.logo__title {
+	font-family: 'zantroke';
+	font-size: 30px;
+  color: rgb(255, 255, 255);
+  text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.33);
+}
+
+
+.logo__img-foto {
+	width: 200px;
+	display: block;
+	position: absolute;
+	top: -9px;
+	left: 233px;
+}
+
+.logo__text {
+	color: #e5e2dc;
+	font-family: 'zantroke';
+}
+
+.phone {
+	// display: flex;
+}
+
+.phone__text {
+	color: #e5e2dc;
+	font-size: 18px;
+	margin-bottom: 10px;
+}
+
+.phone__call-btn {
+	@include btn;
+	margin-bottom: 10px;
+	margin-left: 30px;
+	position: relative;
+	transition:  .3s;
+		&:hover {
+			transform: scale(1.2);
+		}
+}
+
+
+.phone__call-triangle {
+	border-top: 10px solid #9bd74a;
+	border-right: 10px solid transparent;
+	border-left: 10px solid transparent;
+	border-bottom: 0px solid transparent;
+	width: 0px;
+	height: 0px;
+	top: 98%;
+	position: absolute;
+	left: 50%;
+}
+
+.phone-number {
+	display: block;
+	color: #e2dfd8;
+	font-size: 22px;
+	font-weight: 600;
+  color: rgb(255, 255, 255);
+  text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.33);
+}
+
+.address {
+	color: #e2dfd8;
+}

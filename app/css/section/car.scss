@@ -1,0 +1,169 @@
+.section {
+		padding-bottom: 40px;
+}
+
+.car {
+	padding-bottom: 50px;
+}
+
+
+.section-title {
+	text-align: center;
+	padding-top: 15px;
+	padding-bottom: 40px;
+}
+
+.section-title__text {	
+	color: $white;
+}
+
+.about {
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+}
+
+.about__left {
+	margin-top: -20px;
+}
+
+.form-row {
+	width: 360px;
+	background: -moz-linear-gradient(45deg,  #3e4d5a 7%, #526d85 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(45deg,  #3e4d5a 7%,#526d85 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(45deg,  #3e4d5a 7%,#526d85 100%);
+	border-radius: 5px;
+	border: 2px solid #c2c1c5;
+	display: flex;
+	flex-direction: column;
+	align-items: center; 
+	box-shadow: -7px 10px 5px 0px rgba(0,0,0,0.75);
+}
+
+.form-row__title {
+	font-weight: 600;
+	font-size: 24px;
+	border: 1px solid #6a8297;
+	background: #3c4a58;
+	margin: 5px;
+	text-align: center;
+	color: $white;
+}
+
+.form__tag {
+	margin-bottom: 10px;
+	text-align: center;
+}
+
+.form-row__input {
+	padding: 5px 0 5px 0;
+	width: 250px;
+	border-radius: 5px;
+}
+
+input[type=text] {
+    color:#999;
+}
+input[type=text]:focus {
+    color:#000;
+}
+
+.form__tag-radio {
+	text-align: center;
+	width: 81px;
+}
+
+.form-row__radio {
+	cursor: pointer;
+}
+
+.form__radio-title {
+	display: inline-block;
+	color: $white;
+	font-weight: 600;
+	font-size: 18px;
+}
+
+.form__radio-elem {
+	position: absolute;
+	left: -9999px;
+}
+
+.form-radio__fake {
+	  position: relative;
+    width: 16px;
+    height: 16px;
+    background: #fff;
+    display: inline-block;
+    margin-left: 5px;
+    border-radius: 5px;
+    	&:after {
+    		position: absolute;
+    		content: "";
+    		width: 0;
+    		height: 0;
+    		background: black;
+    		transform: translate(-50%, -50%);
+    		transition: .1s;
+    		top: 50%;
+    	}
+}
+
+.form__radio-elem:checked + .form-radio__fake:after {
+	width: 8px;
+	height: 8px;
+}
+
+.form-row__radio .form__radio-elem:checked + .form-radio__fake:after {
+		background: url('../../img/icons/check.svg') center no-repeat;
+		width: 20px;
+		height: 8px;
+		background-size: 13px;
+}
+
+.form__tag-file {
+	margin-bottom: 20px;
+}
+
+input[type="file"] {
+	display: none;
+}
+
+.form__file {
+	color: $white;
+	font-weight: 600;
+	border-bottom: 1px solid $white;
+	cursor: pointer;
+	display: inline-block;
+
+}
+
+.fa-camera {
+	color: $white;
+	font-size: 18px;
+	position: relative;
+	top: 5px;
+	left: 4px;
+	cursor: pointer;
+}
+
+.form__tag-btn {
+	text-align: center;
+	width: 205px;
+	margin-bottom: 10px;
+}
+
+.form__buttom {
+	@include btn;
+	cursor: pointer;
+}
+
+.form__file-text {
+	font-size: 12px;
+	color: #ffffff;
+}
+
+.form__phone {
+	color: $white;
+	font-weight: 500;
+}

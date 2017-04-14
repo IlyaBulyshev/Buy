@@ -1,0 +1,38 @@
+//mixin
+@mixin btn {
+	display: inline-block;
+	background: #9bd74a;
+	border-radius: 5px;
+	color: #f9fcf0;
+	padding: 5px;
+	text-transform: uppercase;
+	font-weight: 600;
+}
+
+//place holder
+%clearfix {
+	&:after {
+		content: "";
+		display: block;
+		clear: both;
+	}
+}
+
+
+//color
+$green: #a1cc25;
+$btn: #a8e256;
+$white: #e5e2dc;
+
+//layout
+@import "layout/normalize";
+@import "layout/fonts";
+@import "layout/font-awesome";
+@import "layout/settings";
+
+//section
+@import "section/footer";
+@import "section/header";
+@import "section/menu";
+@import "section/car";
+@import "section/map";
